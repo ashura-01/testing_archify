@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arc-ify Settings</title> 
+  <script type="module" crossorigin src="/assets/styles-CxqUaUUo.js"></script>
+  <script type="module" crossorigin src="/localstorage.js"></script>
+  <script type="module" crossorigin src="/utils.js"></script>
+  <script type="module" crossorigin src="/options.js"></script>
+  <link rel="stylesheet" crossorigin href="/styles.css">
+</head>
+<body class="options-page"> 
+    <div class="options-container"> 
+        <h1 class="options-title">Arcify Settings</h1> 
+
+        <div class="options-setting-item"> 
+            <label for="defaultSpaceName" class="options-label">Default Space Name:</label> 
+            <input type="text" id="defaultSpaceName" class="options-input"> 
+        </div>
+
+        <div class="options-setting-item options-setting-toggle">
+             <label for="autoArchiveEnabled" class="options-label">Enable Auto-Archiving:</label>
+             <div class="toggle-switch-container">
+                 <input type="checkbox" id="autoArchiveEnabled" class="ios-toggle">
+                 <label for="autoArchiveEnabled" class="toggle-label"></label> <!-- Visual part of the toggle -->
+             </div>
+        </div>
+
+        <div class="options-setting-item">
+           <label for="autoArchiveIdleMinutes" class="options-label">Archive Tabs After Idle (minutes):</label>
+           <input type="number" id="autoArchiveIdleMinutes" class="options-input" min="1" step="1">
+           <small class="options-description">Tabs inactive for this duration (and not pinned or audible) will be archived.</small>
+        </div>
+
+        <button id="save" class="options-button">Save Settings</button>
+        <div id="status" class="options-status"></div>
+    </div>
+ <!-- Ensure options.js is type="module" if it uses imports -->
+</body>
+</html>

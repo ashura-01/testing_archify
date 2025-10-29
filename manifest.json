@@ -1,0 +1,43 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "commands": {
+      "_execute_action": {
+         "description": "Toggle side panel",
+         "suggested_key": {
+            "default": "Ctrl+E",
+            "mac": "Command+E"
+         }
+      },
+      "quickPinToggle": {
+         "description": "Quick Pin/Unpin Tab",
+         "suggested_key": {
+            "default": "Ctrl+D",
+            "mac": "Command+D"
+         }
+      }
+   },
+   "description": "A sidebar extension that replicates Arc browser's tab management system",
+   "icons": {
+      "128": "assets/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs9NAb2SF34TeuyMXAoSuQ3vdHwDlYFn2qXf7OPXb/O4KKqf3t+Kcpvb7PvOpHsXutvyb+Bb3CGGjqq8waFTTMAcQNIofM5ok48PvLdLcnfMn3hw+LO6hbws2V6sGR+pIup4SsE0m+xHQJXsT4NdZIk9ecljaOvdHDCsYFPlwmaFTT6i1mIivYr6rzqVHvi2CDAK4Je3I2zY7uphh5/Ks7ekKL/d0L8AtswyWsDXVtnKDh59IcrW0rTHlrpO/GhGNvBoV4OJWe9WH1+k2gOhzNKQDzDq7WhdLnzBgfQa8L5XDy1Z3bDroPfyB4P9To/0fMny+GXnrKqT0IHXvrPq3vwIDAQAB",
+   "manifest_version": 3,
+   "name": "Arcify: Arc like vertical tab spaces",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "tabGroups", "sidePanel", "storage", "bookmarks", "alarms", "commands", "favicon" ],
+   "side_panel": {
+      "default_path": "sidebar.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.1.0",
+   "web_accessible_resources": [ {
+      "extension_ids": [ "*" ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "sidebar.js", "onboarding.js", "assets/*", "_favicon/*" ]
+   } ]
+}
