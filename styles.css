@@ -224,20 +224,21 @@ h3 {
 
 .space-options-container {
     position: relative;
+    /* background-color: wheat; */
 }
 
 .space-options {
     background: none;
     border: none;
     font-size: 20px;
-    color: #101010bd;
+    color: #ffffff;
     cursor: pointer;
     padding: 8px;
     border-radius: 8px;
 }
 
 .space-options:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(194, 243, 255, 0.479);
 }
 
 .space-options-dropdown {
@@ -997,7 +998,7 @@ h3 {
     padding: 8px;
     cursor: pointer;
     border-radius: 8px;
-    color: #101010bd; /* Adjust icon color */
+    color: #8a94a1cc; /* Adjust icon color */
     transition: background-color 0.2s ease;
 }
 
